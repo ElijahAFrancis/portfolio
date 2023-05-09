@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 :root {
@@ -13,30 +14,122 @@
 }
 
 body {
-    background-color: var(--light-grey);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grey);
     color: var(--primary);
 }
 
 header {
-    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
     background-color: var(--dark-grey);
-    color: var(--secondary)
+    color: var(--primary)
+}
+
+h1 {
+    font-size: 150%;
+}
+
+h2 {
+    font-size: 300%;
+}
+
+h3 {
+    font-size: 250%;
+    text-align: center;
+}
+
+h4 {
+    font-size: 150%;
 }
 
 nav {
-    margin: 0rem 3rem 0rem 0rem;
-    float: right;
+    display: flex;
+    justify-content: end;
+    padding-right: 1%
 }
 
 nav ul {
-    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    min-width: 350px;
+    list-style: none;
 }
 
-nav ul li {
-    display: inline-block;
-    margin-left: 2rem;
+nav a {
+    color: var(--primary);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--secondary);
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2%;
+    align-items: center;
 }
 
 #about p {
-color: var(--secondary);
+    font-size: 150%;
+    color: var(--primary);
+}
+
+#about img {
+    max-height: 30rem;
+    margin-top: 2rem;
+    border-radius: 5rem;
+    border-style: solid;
+    border-color: var(--secondary);
+}
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 0 0;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.card img {
+    border-radius: 3rem;
+    border-color: var(--secondary);
+    border-style: solid;
+    margin-top: 1rem;
+    width: 50%;
+    min-width: 400px;
+}
+
+
+
+#contact ul {
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+    list-style: none;
+}
+
+#contact a {
+    margin: 2%;
+    color: var(--primary);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    color: var(--secondary);
 }
