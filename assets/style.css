@@ -43,6 +43,7 @@ h3 {
 }
 
 h4 {
+    margin-top: 2rem;
     font-size: 150%;
 }
 
@@ -84,11 +85,12 @@ nav a:hover {
 }
 
 #about img {
-    max-height: 30rem;
     margin-top: 2rem;
     border-radius: 5rem;
     border-style: solid;
     border-color: var(--secondary);
+    max-width: 25%;
+    height: auto;
 }
 
 .work {
@@ -97,12 +99,13 @@ nav a:hover {
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
+    margin-bottom: 3%;
 }
 
 .card {
     flex: 1 0 0;
     text-align: center;
-    margin-top: 2rem;
+    margin: 1rem;
 }
 
 .card img {
@@ -114,13 +117,24 @@ nav a:hover {
     min-width: 400px;
 }
 
+.card img:hover {
+    opacity: .75;
+    transition: .2s;
+}
 
+#firstCard {
+    min-width: 100%;
+}
 
 #contact ul {
     display: flex;
     justify-content: center;
     margin: 2%;
     list-style: none;
+}
+
+#contact li {
+    padding: 1rem;
 }
 
 #contact a {
@@ -132,4 +146,20 @@ nav a:hover {
 
 #contact a:hover {
     color: var(--secondary);
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+figure img {
+    border-radius: 2rem;
+    border-color: var(--secondary);
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
 }
